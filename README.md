@@ -40,7 +40,7 @@ The following **bonus** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-- [X] Worked on the icon to replecte twitter's birds. 
+- [X] Worked on the icon to replicate twitter's birds. 
 
 ## Video Walkthrough
 
