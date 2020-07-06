@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComposeActivity">
+
+    <EditText
+        android:id="@+id/et_Compose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="What are your thoughts?"
+        android:inputType="textMultiLine"
+        android:maxLength="140"
+        android:textColorHighlight="#0C4959"
+        android:minLines="5"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_Tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Compose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#0FA0EC"
+        android:text="Publish Tweet"
+        android:textColor="#0C0101"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_word_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Compose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="338dp"
+        android:maxLines="1"
+        android:lines="1"
+        tools:text="Max 140 words" />
+</RelativeLayout>

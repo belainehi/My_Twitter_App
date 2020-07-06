@@ -34,4 +34,12 @@
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/iv_profile"
         android:text="“We live, in fact, in a world starved for solitude, silence, and private: and therefore starved for meditation and true friendship.” ― C.S. Lewis, The Weight of Glory" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:text="TextView" />
 </RelativeLayout>

@@ -3,16 +3,16 @@ package com.codepath.apps.restclienttemplate;
 import android.app.Application;
 import android.content.Context;
 
-import androidx.room.Room;
-
 import com.facebook.stetho.Stetho;
+
+import androidx.room.Room;
 
 /*
  * This is the Android application itself and is used to configure various settings
  * including the image cache in memory and on disk. This also adds a singleton
  * for accessing the relevant rest client.
  *
- *     RestClient client = RestApplication.getRestClient(Context context);
+ *     TwitterClient client = TwitterApp.getRestClient(Context context);
  *     // use client to send requests to API
  *
  */
@@ -24,7 +24,7 @@ public class TwitterApplication extends Application {
     public void onCreate() {
         super.onCreate();
         // when upgrading versions, kill the original tables by using
-		// fallbackToDestructiveMigration()
+        // fallbackToDestructiveMigration()
         myDatabase = Room.databaseBuilder(this, MyDatabase.class,
                 MyDatabase.NAME).fallbackToDestructiveMigration().build();
 
